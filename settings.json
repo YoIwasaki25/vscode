@@ -1,0 +1,167 @@
+{
+    "python.pythonPath": "/usr/local/bin/python3",
+    "terminal.integrated.inheritEnv": false,
+    "git.suggestSmartCommit": false,
+    "editor.lightbulb.enabled": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && runFiles=`ls *.cpp` && g++ -std=c++17 `echo ${runFiles}` -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
+    //-----------------------------------------------------------------------
+    //  editor setting
+    //-----------------------------------------------------------------------
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false, //minimap delete
+    "editor.renderLineHighlight": "all", //columns number
+    "editor.lineNumbers": "relative",
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorWidth": 30,
+    "editor.fontSize": 11,
+    "editor.tabSize": 4,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.suggestSelection":"recentlyUsed",
+    "editor.wordBasedSuggestions": false,
+    //-----------------------------------------------------------------------
+    //  Zen mode settings
+    //-----------------------------------------------------------------------
+    "zenMode.fullScreen": true,
+    "zenMode.centerLayout": true,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar":false,
+    "zenMode.hideTabs": true,
+    "zenMode.restore": false,
+    //  Tab settings
+    //-----------------------------------------------------------------------
+    //-----------------------------------------------------------------------
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showIcons": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabCloseButton": "left",
+    "workbench.startupEditor": "none",
+    "workbench.editor.openPositioning": "last",
+
+    "explorer.openEditors.visible": 0,
+
+
+    //-----------------------------------------------------------------------
+    //  language tab setting
+    //-----------------------------------------------------------------------
+    "[dart]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnSave": false,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+    },
+    //-----------------------------------------------------------------------
+    //  color scheme
+    //-----------------------------------------------------------------------
+    "workbench.iconTheme": "vscode-icons-mac",
+    "workbench.list.keyboardNavigation": "simple",
+    "workbench.colorTheme": "Iceberg",
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#A83A39",
+        "statusBar.background": "#161821",
+        "statusBar.noFolderBackground": "#161821",
+        "statusBar.noFolderForeground": "#CCCB75",
+        "statusBar.debuggingBackground": "#161821",
+        "statusBar.foreground": "#818596"
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#161821",
+        "#818596"
+    ],
+    "vim.statusBarColors.insert": [
+        "#84A0C6",
+        "#161821"
+    ],
+    "vim.statusBarColors.visual": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.replace": [
+        "#E2A478",
+        "#161821"
+    ],
+    "vim.statusBarColors.commandlineinprogress": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.searchinprogressmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.easymotionmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.easymotioninputmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.surroundinputmode": [
+        "#818596",
+        "#161821"
+    ],
+    //-----------------------------------------------------------------------
+    //  vim　setting
+    //-----------------------------------------------------------------------
+    "vim.enableNeovim": true,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.incsearch": true,
+    "vim.leader": "<space>",
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.autoindent": true,
+    "vim.insertModeKeyBindings": [
+        { "before": [ "j", "j" ], "after": [ "<ESC>" ] },
+        {"before": [";",";"],"commands": ["editor.action.triggerSuggest"]},
+    ],
+    "vim.normalModeKeyBindings": [
+
+        { "before": [ ";" ], "after": [ ":" ] },
+        { "before": [ "`" ], "after": [ "g", "t" ] },
+        { "before": [ "~" ], "after": [ "g", "T" ] },
+        { "before": [ "<tab>",], "after": [ "<C-w>", "w" ] },
+        { "before": [ "<tab>", "h" ], "after": [ "<C-w>", "h" ] },
+        { "before": [ "<tab>", "j" ], "after": [ "<C-w>", "j" ] },
+        { "before": [ "<tab>", "k" ], "after": [ "<C-w>", "k" ] },
+        { "before": [ "<tab>", "l" ], "after": [ "<C-w>", "l" ] },
+        { "before": [ "<tab>", "l" ], "after": [ "<C-w>", "l" ] },
+        { "before": [ "<Enter>" ], "commands": [ "editor.action.insertLineAfter" ] },
+        { "before": [ "L" ], "after": [ "$" ] },
+        { "before": [ "H" ], "after": [ "^" ] },
+        { "before": ["<leader>", "s"], "commands": [":split"]},
+        { "before": ["<leader>", "v"], "commands": [":vsplit"]},
+    ],
+    
+    "editor.accessibilitySupport": "on",
+    "javascript.validate.enable": false,
+    "python.formatting.provider": "yapf",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+}

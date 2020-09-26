@@ -1,0 +1,1 @@
+vscode のsetting.jsonとkeybinding.json
